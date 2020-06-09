@@ -11,7 +11,7 @@
 
 ## 3. Rasa Chatbot "MEDICARE LOCATOR" to get the information about nearby HOSPITAL.
 
-![original_image](https://github.com/prachi0112/9eye/blob/master/screenshots/covid19_bot.png)
+![original_image](https://github.com/prachi0112/9eye/blob/master/screenshots/hospital_bot.png)
 
 
 ## Technology Stack
