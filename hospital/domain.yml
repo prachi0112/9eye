@@ -1,0 +1,67 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - inform
+  - search_provider
+  - thanks
+
+entitites:
+  - location
+  - facility_type
+
+# Slot name is matched with the name of entity. If entity is matched, the extracted value of entity is automatically set as slot. To disable this behaviour, set (auto_fill:False) for the specific slot
+slots:
+  location: 
+    type: text
+    # auto-fill: False
+  facility_type:
+    type: text
+  address:
+    type: unfeaturized
+
+actions:
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_how_can_i_help
+  - utter_ask_location
+  - action_facility_search
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_how_can_i_help:
+  - text: "Hello. I am a Medicare Locator. I can help you find nearest hospital.How can I help?"
+  - text: "Hi. My name is Medicare Locator. How can I help you today?"
+
+  utter_ask_location:
+  - text: "Can you provide your location please?"
+  - text: "To find the nearest {facility_type} I need your address."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
