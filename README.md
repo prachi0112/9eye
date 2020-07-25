@@ -14,7 +14,15 @@
 ![original_image](https://github.com/prachi0112/9eye/blob/master/screenshots/hospital_bot.png)
 
 
-## Technology Stack
+## 4. Factors Affecting Number of Shops present in an area
+We are trying to find the factors that affect the number of shops present in an area.
+Some factors we considered are :-
+1. Population Density of an area
+2. Proximity to metro stations
+
+## Technology Stack (Overall for all projects)
   
-1. Python 3  
-2. Rasa Open Source
+1. Python 3
+2. NLP (NLTK, Textblob)
+3. Rasa Open Source (along with SpaCy)
+4. Data analysis using Pandas
